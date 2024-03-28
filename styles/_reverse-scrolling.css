@@ -1,0 +1,46 @@
+.reverse-scrolling {
+    & .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        overflow-y: hidden;
+        padding: 4rem;
+    }
+
+    & .column {
+        display: grid;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .column-reverse {
+        transform: translateY(calc(-100% + 100dvh));
+        flex-direction: column-reverse;
+        animation: reverse-scroll linear forwards;
+	    animation-timeline: scroll(root block);
+    }
+
+    img {
+        border-radius: 1em;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 0.75;
+        object-fit: cover;
+    }
+
+    figcaption {
+        color: var(--color-white);
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+@keyframes reverse-scroll {
+	from {
+		transform: translateY(calc(-100% + 100vh));
+	}
+
+	to {
+		transform: translateY(calc(100% - 100vh));
+	}
+}

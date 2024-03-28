@@ -2,6 +2,7 @@
 
 @import url(_variables.css);
 @import url(_homepage.css);
+@import url(_reverse-scrolling.css);
 
 *,
 *::before,
@@ -19,6 +20,7 @@ html {
 body {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
+    font-size: var(--font-size-base);
     color: var(--color-white);
     background-color: var(--color-dark);
     width: 100%;

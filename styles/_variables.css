@@ -2,5 +2,6 @@
     --color-white: hsl(0, 0%, 100%);
     --color-dark: hsl(0, 0%, 5%);
 
+    --font-size-base: 1.6rem;
     --font-size-md: 2.4rem;
 }
