@@ -13,14 +13,14 @@
         gap: 6rem;
     }
 
-    .column-reverse {
+    & .column-reverse {
         transform: translateY(calc(-100% + 100dvh));
         flex-direction: column-reverse;
         animation: reverse-scroll linear forwards;
 	    animation-timeline: scroll(root block);
     }
 
-    img {
+    & img {
         border-radius: 1em;
         width: 100%;
         height: auto;
@@ -28,7 +28,7 @@
         object-fit: cover;
     }
 
-    figcaption {
+    & figcaption {
         color: var(--color-white);
         text-align: center;
         margin-top: 1rem;

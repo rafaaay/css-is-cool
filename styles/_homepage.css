@@ -37,7 +37,7 @@
     & a {
         display: inline-block;
         font-size: var(--font-size-md);
-        font-weight: 400;
+        font-weight: 600;
         color: var(--color-dark);
         text-align: center;
         padding: 2rem;
